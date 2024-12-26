@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Lamaran Kerja</title>
+    <link rel="stylesheet" href="css/job-application.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Form Lamaran Kerja</h1>
+        
+        <!-- Menampilkan data profil (readonly) -->
+        <div class="form-section">
+            <h2>Data Pribadi</h2>
+            <div class="profile-info">
+                <div class="info-group">
+                    <label>Nama Lengkap:</label>
+                    <p id="profileName"></p>
+                </div>
+                <div class="info-group">
+                    <label>Email:</label>
+                    <p id="profileEmail"></p>
+                </div>
+                <div class="info-group">
+                    <label>Nomor Telepon:</label>
+                    <p id="profilePhone"></p>
+                </div>
+                <div class="info-group">
+                    <label>Alamat:</label>
+                    <p id="profileAddress"></p>
+                </div>
+            </div>
+        </div>
+
+        <form id="jobApplicationForm" enctype="multipart/form-data">
+            <div class="form-section">
+                <h2>Informasi Tambahan</h2>
+                <div class="form-group">
+                    <label for="expectedSalary">Ekspektasi Gaji*</label>
+                    <input type="number" id="expectedSalary" name="expectedSalary" required>
+                </div>
+                <div class="form-group">
+                    <label for="startDate">Tanggal Siap Mulai Kerja*</label>
+                    <input type="date" id="startDate" name="startDate" required>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="agreement" name="agreement" required>
+                        Saya menyatakan bahwa semua informasi yang diberikan adalah benar dan saya bersedia ditempatkan di seluruh Indonesia
+                    </label>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">Kirim Lamaran</button>
+        </form>
+    </div>
+    <script src="js/job-application.js"></script>
+</body>
+</html> 

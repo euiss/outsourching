@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Jobs | Job Portal</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/jobs.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Logo">
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="jobs.html" class="active">All Jobs</a>
+            <a href="login.html" class="sign-in">Sign in</a>
+            <a href="register.html" class="create-account">Create Account</a>
+        </div>
+    </nav>
+
+    <!-- Jobs Header -->
+    <header class="jobs-header">
+        <h1>Available Positions</h1>
+        <div class="search-filters">
+            <div class="search-box">
+                <input type="text" placeholder="Search for jobs...">
+                <input type="text" placeholder="Location">
+                <button class="search-btn">Search</button>
+            </div>
+            <div class="filters">
+                <select name="industry">
+                    <option value="">Industry</option>
+                    <option value="banking">Banking</option>
+                    <option value="healthcare">Healthcare</option>
+                    <option value="technology">Technology</option>
+                    <option value="energy">Energy</option>
+                </select>
+                <select name="experience">
+                    <option value="">Experience Level</option>
+                    <option value="entry">Entry Level</option>
+                    <option value="mid">Mid Level</option>
+                    <option value="senior">Senior Level</option>
+                </select>
+                <select name="salary">
+                    <option value="">Salary Range</option>
+                    <option value="0-10">0-10 Million</option>
+                    <option value="10-20">10-20 Million</option>
+                    <option value="20-30">20-30 Million</option>
+                    <option value="30+">30+ Million</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <!-- Jobs List -->
+    <section class="jobs-list">
+        <!-- Pertamina Jobs -->
+        <div class="job-listing">
+            <img src="images/pertamina-logo.png" alt="Pertamina">
+            <div class="job-details">
+                <h2>Senior Process Engineer</h2>
+                <h3>PT Pertamina (Persero)</h3>
+                <div class="job-info">
+                    <span><i class="fas fa-map-marker-alt"></i> Jakarta, Indonesia</span>
+                    <span><i class="fas fa-money-bill-wave"></i> IDR 15-25 Million</span>
+                    <span><i class="fas fa-briefcase"></i> 5+ years experience</span>
+                </div>
+                <p class="job-description">Looking for experienced Process Engineer to join our downstream operations team...</p>
+                <a href="job-application.html"><button class="apply-btn">Apply Now</button></a>
+            </div>
+        </div>
+
+        <!-- BPJS Kesehatan Jobs -->
+        <div class="job-listing">
+            <img src="images/bpjs-logo.png" alt="BPJS Kesehatan">
+            <div class="job-details">
+                <h2>IT Project Manager</h2>
+                <h3>BPJS Kesehatan</h3>
+                <div class="job-info">
+                    <span><i class="fas fa-map-marker-alt"></i> Jakarta, Indonesia</span>
+                    <span><i class="fas fa-money-bill-wave"></i> IDR 18-25 Million</span>
+                    <span><i class="fas fa-briefcase"></i> 7+ years experience</span>
+                </div>
+                <p class="job-description">Seeking an experienced IT Project Manager to lead digital transformation initiatives...</p>
+                <button class="apply-btn">Apply Now</button>
+            </div>
+        </div>
+
+        <!-- IBM Jobs -->
+        <div class="job-listing">
+            <img src="images/ibm-logo.png" alt="IBM">
+            <div class="job-details">
+                <h2>Cloud Solutions Architect</h2>
+                <h3>IBM Indonesia</h3>
+                <div class="job-info">
+                    <span><i class="fas fa-map-marker-alt"></i> Jakarta, Indonesia</span>
+                    <span><i class="fas fa-money-bill-wave"></i> IDR 25-35 Million</span>
+                    <span><i class="fas fa-briefcase"></i> 8+ years experience</span>
+                </div>
+                <p class="job-description">Join our cloud solutions team to design and implement enterprise-scale cloud architectures...</p>
+                <button class="apply-btn">Apply Now</button>
+            </div>
+        </div>
+
+        <!-- BCA Jobs -->
+        <div class="job-listing">
+            <img src="images/bca-logo.png" alt="BCA">
+            <div class="job-details">
+                <h2>Digital Banking Product Manager</h2>
+                <h3>Bank Central Asia</h3>
+                <div class="job-info">
+                    <span><i class="fas fa-map-marker-alt"></i> Jakarta, Indonesia</span>
+                    <span><i class="fas fa-money-bill-wave"></i> IDR 20-30 Million</span>
+                    <span><i class="fas fa-briefcase"></i> 6+ years experience</span>
+                </div>
+                <p class="job-description">Lead the development and enhancement of digital banking products...</p>
+                <button class="apply-btn">Apply Now</button>
+            </div>
+        </div>
+
+        <!-- Add more job listings as needed -->
+    </section>
+
+    <!-- Pagination -->
+    <div class="pagination">
+        <button class="page-btn active">1</button>
+        <button class="page-btn">2</button>
+        <button class="page-btn">3</button>
+        <button class="page-btn">4</button>
+        <button class="page-btn">Next</button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="Logo">
+            </div>
+            <div class="footer-links">
+                <h4>Support</h4>
+                <a href="#">Frequently Asked Question (FAQ)</a>
+                <a href="#">Keamanan</a>
+            </div>
+            <div class="footer-certificates">
+                <img src="images/sgs.png" alt="SGS">
+                <img src="images/kominfo.png" alt="Kominfo">
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2024 Talentics.<br>PT Semesta Integrasi Digital. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/jobs.js"></script>
+</body>
+</html> 

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Settings | InJobs</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+           <a href="index.html" ><img src="images/logo.png" alt="InJobs Logo"></a>
+        </div>
+        <div class="nav-links">
+            <a href="jobs.html">All Jobs</a>
+            <a href="login.html">Sign in</a>
+            <a href="register.html">Create Account</a>
+        </div>
+    </nav>
+
+    <!-- Profile Container -->
+    <div class="profile-wrapper">
+        <!-- Sidebar -->
+        <div class="profile-sidebar">
+            <div class="user-info">
+                <div class="profile-photo">
+                    <img src="images/default-avatar.png" alt="Profile Photo">
+                    <button class="change-photo">
+                        <i class="fas fa-camera"></i>
+                    </button>
+                </div>
+                <h3>Profile Settings</h3>
+            </div>
+            <ul class="profile-nav">
+                <li class="active">
+                    <i class="fas fa-user"></i>
+                    <span>Personal Data</span>
+                </li>
+                <li>
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Education</span>
+                </li>
+                <li>
+                    <i class="fas fa-briefcase"></i>
+                    <span>Work Experience</span>
+                </li>
+                <li>
+                    <i class="fas fa-certificate"></i>
+                    <span>Skills & Certifications</span>
+                </li>
+                <li>
+                    <i class="fas fa-file-alt"></i>
+                    <span>Documents</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="profile-content">
+            <div class="content-header">
+                <h2>Personal Data</h2>
+                <p>Fill in your personal information accurately</p>
+            </div>
+
+            <form class="profile-form">
+                <!-- Basic Info -->
+                <div class="form-section">
+                    <h3>Basic Information</h3>
+                    
+                    <div class="form-group">
+                        <label>Full Name*</label>
+                        <input type="text" placeholder="Enter your full name" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Place of Birth*</label>
+                            <input type="text" placeholder="Enter place of birth" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Date of Birth*</label>
+                            <input type="date" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Gender*</label>
+                            <select required>
+                                <option value="">Select gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Religion*</label>
+                            <select required>
+                                <option value="">Select religion</option>
+                                <option value="islam">Islam</option>
+                                <option value="christian">Christian</option>
+                                <option value="catholic">Catholic</option>
+                                <option value="hindu">Hindu</option>
+                                <option value="buddha">Buddha</option>
+                                <option value="konghucu">Konghucu</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="form-section">
+                    <h3>Contact Information</h3>
+                    
+                    <div class="form-group">
+                        <label>Email*</label>
+                        <input type="email" placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Phone Number*</label>
+                        <input type="tel" placeholder="Enter your phone number" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Current Address*</label>
+                        <textarea placeholder="Enter your complete address" required></textarea>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="save-btn">Save Changes</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="InJobs Logo">
+            </div>
+            <div class="footer-links">
+                <h4>Support</h4>
+                <a href="#">FAQ</a>
+                <a href="#">Security</a>
+            </div>
+            <div class="footer-certificates">
+                <img src="images/sgs.png" alt="SGS">
+                <img src="images/kominfo.png" alt="Kominfo">
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2024 InJobs.<br>PT Semesta Integrasi Digital. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="js/profile.js"></script>
+</body>
+</html> 

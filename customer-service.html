@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Service | Job Portal</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/customer-service.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Logo">
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="jobs.html">All Jobs</a>
+            <a href="login.html" class="sign-in">Sign in</a>
+            <a href="register.html" class="create-account">Create Account</a>
+        </div>
+    </nav>
+
+    <!-- Customer Service Section -->
+    <section class="cs-section">
+        <div class="cs-container">
+            <div class="cs-header">
+                <h1>How Can We Help You?</h1>
+                <p>Get instant answers from our AI assistant or browse through our FAQ</p>
+            </div>
+
+            <div class="cs-content">
+                <!-- FAQ Section -->
+                <div class="faq-section">
+                    <h2>Frequently Asked Questions</h2>
+                    <div class="faq-list">
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>How do I create an account?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                Click on the "Create Account" button in the top right corner and fill in your details.
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>How do I apply for a job?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                Browse available positions and click "Apply Now" on the job you're interested in.
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>How can I update my profile?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                Log in to your account and go to the Profile section to update your information.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Options -->
+                <div class="contact-options">
+                    <h2>Other Ways to Contact Us</h2>
+                    <div class="contact-cards">
+                        <div class="contact-card">
+                            <i class="fas fa-envelope"></i>
+                            <h3>Email Support</h3>
+                            <p>support@jobportal.com</p>
+                            <a href="mailto:support@jobportal.com" class="contact-btn">Send Email</a>
+                        </div>
+                        <div class="contact-card">
+                            <i class="fas fa-phone"></i>
+                            <h3>Phone Support</h3>
+                            <p>+62 123 4567 890</p>
+                            <a href="tel:+621234567890" class="contact-btn">Call Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chatbot Floating Button -->
+    <button id="chatbot-toggle" class="chatbot-toggle">
+        <i class="fas fa-comments"></i>
+    </button>
+
+    <!-- Chatbot Interface -->
+    <div id="chatbot-container" class="chatbot-container">
+        <div class="chatbot-header">
+            <h3>Customer Support</h3>
+            <button id="chatbot-close" class="chatbot-close">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="chatbot-messages" id="chatbot-messages">
+            <div class="message bot">
+                <img src="images/bot-avatar.png" alt="Bot" class="bot-avatar">
+                <div class="message-content">
+                    Hi! I'm your virtual assistant. How can I help you today?
+                </div>
+            </div>
+        </div>
+        <div class="chatbot-input">
+            <input type="text" id="user-input" placeholder="Type your message...">
+            <button id="send-message">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="Logo">
+            </div>
+            <div class="footer-links">
+                <h4>Support</h4>
+                <a href="#">Frequently Asked Question (FAQ)</a>
+                <a href="#">Keamanan</a>
+            </div>
+            <div class="footer-certificates">
+                <img src="images/sgs.png" alt="SGS">
+                <img src="images/kominfo.png" alt="Kominfo">
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2024 Talentics.<br>PT Semesta Integrasi Digital. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/config.js"></script>
+    <script src="js/customer-service.js"></script>
+</body>
+</html> 

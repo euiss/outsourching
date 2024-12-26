@@ -1,0 +1,142 @@
+/* Jobs Header Styles */
+.jobs-header {
+    background: var(--primary-color);
+    color: white;
+    padding: 3rem 5%;
+}
+
+.jobs-header h1 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.search-filters {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.filters {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.filters select {
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    flex: 1;
+    cursor: pointer;
+}
+
+/* Jobs List Styles */
+.jobs-list {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 5%;
+}
+
+.job-listing {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.job-listing:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.job-listing img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    padding: 10px;
+}
+
+.job-details {
+    flex: 1;
+}
+
+.job-details h2 {
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+.job-details h3 {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.job-info {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.job-info span {
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+}
+
+.job-info i {
+    color: var(--primary-color);
+    margin-right: 0.5rem;
+}
+
+.job-description {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+/* Pagination Styles */
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 3rem 0;
+}
+
+.page-btn {
+    padding: 0.8rem 1.2rem;
+    border: 1px solid #eee;
+    background: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.page-btn.active {
+    background: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+.page-btn:hover:not(.active) {
+    background: #f8f8f8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .filters {
+        flex-direction: column;
+    }
+
+    .job-listing {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .job-info {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+} 
